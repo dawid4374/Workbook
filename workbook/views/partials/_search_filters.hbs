@@ -1,0 +1,74 @@
+<h4>Filter Employees</h4>
+<form action="/user" method="POST">
+        <div class="row">
+                <div class="input-field col s12 l4">
+                        <select multiple id="country" name="country">
+                                <option value="" disabled selected>Country</option>
+                                <option value="Poland">Poland</option>
+                                <option value="England">England</option>
+                                <option value="Germany">Germany</option>
+                        </select>
+                </div>
+                <div class="input-field col s12 l4">
+                        <select multiple id="language" name="language">
+                                <option value="" disabled selected>Known Languages</option>
+                                <option value="English">English</option>
+                                <option value="Polish">Polish</option>
+                                <option value="German">German</option>
+                        </select>
+                </div>
+        </div>
+        <div class="row">
+                <div class="input-field col s12 l4">
+                        <select multiple id="studyArea" name="studyArea">
+                                <option value="" disabled selected>Area of study</option>
+                                <option value="Medicine">Medicine</option>
+                                <option value="Agricultural Sciences">Agricultural Sciences</option>
+                                <option value="Biochemistry">Biochemistry</option>
+                                <option value="Cell Biology">Cell Biology</option>
+                                <option value="Environment and Ecology">Environment and Ecology</option>
+                                <option value="Neuroscience">Neuroscience</option>
+                                <option value="Pharmacology and Toxicology">Pharmacology and Toxicology</option>
+                                <option value="Zoology and Plant Biology">Zoology and Plant Biology</option>
+                                <option value="Veterinary Medicine">Veterinary Medicine</option>
+                                <option value="Communication">Communication</option>
+                                <option value="Education">Education</option>
+                                <option value="Arts and Humanities">Arts and Humanities</option>
+                                <option value="Public Policy">Public Policy</option>
+                                <option value="Economics">Economics</option>
+                                <option value="Politics">Politics</option>
+                                <option value="Information Management">Information Management</option>
+                                <option value="Social and Behavioral Sciences">Social and Behavioral Sciences</option>
+                                <option value="Business">Business</option>
+                                <option value="Law">Law</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Space Science">Space Science</option>
+                                <option value="Earth Science">Earth Science</option>
+                                <option value="Paleontology">Paleontology</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Materials Science">Materials Science</option>
+                                <option value="IT">IT</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Statistics">Statistics</option>
+                                <option value="Logistics">Logistics</option>
+                                <option value="Robotics">Robotics</option>
+                        </select>
+                        <label for="studyArea">Area of Study</label>
+                </div>
+
+                <div class="input-field col s12 l4">
+                        <select multiple id="educationLevel" name="educationLevel">
+                                <option value="" disabled selected>Level of Education</option>
+                                <option value="Associate Degree">Associate Degree</option>
+                                <option value="Bechelor Degree">Bechelor Degree</option>
+                                <option value="Doctorate">Doctorate</option>
+                                <option value="High School">High School</option>
+                                <option value="Master Degree">Master Degree</option>
+                        </select>
+                </div>
+                <div class="col s12 l2">
+                        <input type="submit" value="Find" class="btn">
+                </div>
+        </div>
+</form>

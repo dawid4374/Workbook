@@ -1,0 +1,138 @@
+<h3>Add Your Personal Data</h3>
+<div class="row">
+    <form action="/user/add" method="POST" enctype="multipart/form-data" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input value="{{firstName}}" type="text" id="firstName" name="firstName">
+                <label class="active" for="firstName">First Name</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <input value="{{lastName}}" type="text" id="lastName" name="lastName">
+                <label for="lastName">Last Name</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="country" name="country">
+                    {{#select country}}
+                    <option value="Poland" selected>Poland</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    {{/select}}
+                </select>
+                <label for="country">Country where you live</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="school" name="school" value="{{school}}">
+                <label for="school">School / College / University</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="educationLevel" name="educationLevel">
+                    {{#select educationLevel}}
+                    <option value="Associate Degree" selected>Associate Degree</option>
+                    <option value="Bechelor Degree">Bechelor Degree</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="High School">High School</option>
+                    <option value="Master Degree">Master Degree</option>
+                    {{/select}}
+                </select>
+                <label for="educationLevel">Highest Level of Education</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="studyArea" name="studyArea">
+                    {{#select studyArea}}
+                    <option value="Medicine">Medicine</option>
+                    <option value="Agricultural Sciences">Agricultural Sciences</option>
+                    <option value="Biochemistry">Biochemistry</option>
+                    <option value="Cell Biology">Cell Biology</option>
+                    <option value="Environment and Ecology">Environment and Ecology</option>
+                    <option value="Neuroscience">Neuroscience</option>
+                    <option value="Pharmacology and Toxicology">Pharmacology and Toxicology</option>
+                    <option value="Zoology and Plant Biology">Zoology and Plant Biology</option>
+                    <option value="Veterinary Medicine">Veterinary Medicine</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Education">Education</option>
+                    <option value="Arts and Humanities">Arts and Humanities</option>
+                    <option value="Public Policy">Public Policy</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Information Management">Information Management</option>
+                    <option value="Social and Behavioral Sciences">Social and Behavioral Sciences</option>
+                    <option value="Business">Business</option>
+                    <option value="Law">Law</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Space Science">Space Science</option>
+                    <option value="Earth Science">Earth Science</option>
+                    <option value="Paleontology">Paleontology</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Materials Science">Materials Science</option>
+                    <option value="IT">IT</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Statistics">Statistics</option>
+                    <option value="Logistics">Logistics</option>
+                    <option value="Robotics">Robotics</option>
+                    {{/select}}
+                </select>
+                <label for="studyArea">Area of Study</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="language" name="language">
+                    {{#select language}}
+                    <option value="English" selected>English</option>
+                    <option value="Polish">Polish</option>
+                    <option value="German">German</option>
+                    {{/select}}
+                </select>
+                <label for="language">Known Languages</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="proficiency" name="proficiency">
+                    {{#select proficiency}}
+                    <option value="Conversational" selected>Conversational</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1/B2">B1/B2</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    {{/select}}
+                </select>
+                <label for="proficiency">Proficiency</label>
+            </div>
+        </div>
+
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Image</span>
+                <input type="file" name="image" id="image">
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" name="imgName" id="imgName" value="Change image">
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>

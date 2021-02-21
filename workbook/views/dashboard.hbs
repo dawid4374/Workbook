@@ -1,0 +1,55 @@
+{{> _add_btn}}
+
+{{#if users}}
+{{#each users}}
+
+<div class="row" style="margin-top: 2rem;">
+    <div class="col s12 center">
+        {{#if image}}
+        <img src="./uploads/{{image}}" alt="" class="circle responsive-img">
+        {{else}}
+        <i class="fas fa-user-tie"></i>
+        {{/if}}
+    </div>
+</div>
+
+<div>
+    <div class="section">
+        <h4>{{firstName}} {{lastName}}</h4>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Country</h5>
+        <p>{{country}}</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>School</h5>
+        <p>{{school}}</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Education Level</h5>
+        <p>{{educationLevel}}</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Area of Studies</h5>
+        <p>{{studyArea}}</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Language</h5>
+        <p>{{language}}</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+        <h5>Proficiency</h5>
+        <p>{{proficiency}}</p>
+    </div>
+</div>
+{{/each}}
+{{else}}
+<h1>Welcome</h1>
+<p>You have not filled in your personal data</p>
+{{/if}}

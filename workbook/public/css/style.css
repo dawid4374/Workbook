@@ -1,0 +1,31 @@
+.fa-handshake {
+    font-size: 3rem;
+}
+
+#user-card:hover {
+    background-color: #eceff1;
+}
+
+p {
+    margin: 10px 0 !important;
+}
+
+.link {
+    font-weight: bold;
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.fa-user-tie {
+    font-size: 7rem;
+}
+
+.responsive-img {
+    border-color: #cfd8dc;
+    border-width: 6px;
+    border-style: solid;
+}

@@ -1,0 +1,22 @@
+{{> _search_filters}}
+
+<div class="row">
+    {{#each user}}
+    <a style="color: inherit;" style="display:block" href="/user/{{_id}}">
+        <div class="col s12 m4">
+            <div class="card small" id="user-card">
+                <div class="card-content center-align">
+                    <h5>{{firstName}}</h5>
+                    <h5>{{lastName}}</h5>
+                    <p>{{country}}</p>
+                    <p>{{studyArea}}</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{else}}
+    <p>No employees data to display</p>
+    {{/each}}
+</div>
+
