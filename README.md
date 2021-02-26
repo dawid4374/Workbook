@@ -1,7 +1,8 @@
 # Workbook
-A web application for companies looking for employees
 
 ## Node.js/Express.js/MongoDB/Mongoose/Handlebars/Materialize
+
+A web application for companies looking for employees
 
 ### Application preview
 
